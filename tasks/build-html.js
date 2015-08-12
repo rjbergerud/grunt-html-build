@@ -204,7 +204,7 @@ module.exports = function (grunt) {
                 var url;
                 if (options.removePrefix) {
                     url = path.relative(path.resolve(options.removePrefix), path.resolve(f));
-                    return processHtmlTagTemplate(options, { src: url });
+                    return processHtmlTagTemplate(options, url);
                 }
 
                 url = options.relative ? path.relative(options.dest, f) : f;
